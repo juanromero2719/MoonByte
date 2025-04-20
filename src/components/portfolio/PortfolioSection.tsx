@@ -1,7 +1,7 @@
 "use client";
 import { Check } from "lucide-react";
 
-export default function PortfolioSection() {
+export default function PortfolioSection({ id }: { id?: string }) {
     const features = [
         {
             title: "Confianza Garantizada",
@@ -18,15 +18,15 @@ export default function PortfolioSection() {
     ];
 
     return (
-        <section className="py-8 px-4 md:px-8 lg:px-16 bg-white">
+        <section id={id} className="py-8 px-4 md:px-8 lg:px-16 bg-white">
             <div className="mx-auto grid lg:grid-cols-2 gap-8 justify-between items-center ">
                 {/* Sección de texto */}
                 <div>
-                    <h2 className="text-4xl sm:text-5xl font-bold mb-10 text-center sm:mb-20 ">Portafolio</h2>
+                    <h2 className="text-4xl sm:text-5xl font-bold text-center mb-20 lg:mb-15">Portafolio</h2>
                     <ul className="space-y-10">
                         {features.map((item, idx) => (
                             <li key={idx} className="flex items-start gap-3">
-                                <Check className="text-green-600 mt-1 w-[200px]" />
+                                <Check className="text-green-600 mt-1 w-[100px]" />
                                 <div>
                                     <h3 className="text-2xl font-semibold">{item.title}</h3>
                                     <p className="text-gray-600 text-lg">{item.description}</p>

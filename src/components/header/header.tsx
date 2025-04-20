@@ -24,21 +24,6 @@ export default function Header() {
                         Impulsamos tu negocio con tecnología <br />
                         innovadora y personalizada.
                     </p>
-
-                    <div className="flex flex-col-2 sm:flex-row gap-4 mt-10 sm:mt-15 justify-center lg:justify-start">
-                        <Link
-                            href="/portafolio"
-                            className="bg-[#14213d] text-white px-4 sm:px-6 py-3 rounded-md hover:underline transition-colors text-lg sm:text-xl"
-                        >
-                            Ver Portafolio
-                        </Link>
-                        <Link
-                            href="/contacto"
-                            className="border border-[#14213d] text-[#14213d] px-4 sm:px-6 py-3 rounded-md hover:underline transition-colors text-lg sm:text-xl"
-                        >
-                            Contáctanos
-                        </Link>
-                    </div>
                 </div>
 
             </div>
