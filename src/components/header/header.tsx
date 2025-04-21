@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import LogoMoonByte from '@/components/logo'
 
 export default function Header() {
